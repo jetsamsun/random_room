@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随意聊天室</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="join-form" id="joinForm">
+            <h2>加入聊天室</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="请输入您的昵称" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="roomId" placeholder="请输入房间号" required>
+            </div>
+            <button id="joinBtn">加入聊天</button>
+        </div>
+
+        <div class="chat-container" id="chatContainer" style="display: none;">
+            <div class="chat-header">
+                <h2>房间: <span id="roomIdDisplay"></span></h2>
+                <div class="user-info">
+                    用户: <span id="usernameDisplay"></span>
+                    <button id="leaveBtn">离开</button>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="输入消息...">
+                <button id="sendBtn">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="crypto-js.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
