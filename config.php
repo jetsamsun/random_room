@@ -3,7 +3,7 @@
 $redis_config = [
     'host' => '127.0.0.1',
     'port' => 6379,
-    'password' => 'zoFUJ6EzxyWTI0K8', // 如果有密码，请填写
+    'password' => 'xxxx', // 如果有密码，请填写
     'database' => 14
 ];
 
@@ -45,4 +45,5 @@ function generateMessageId($room) {
 }
 
 // 消息过期时间（24小时，单位：秒）
+
 define('MESSAGE_EXPIRY', 10);
